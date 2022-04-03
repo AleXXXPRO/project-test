@@ -1,0 +1,31 @@
+@mixin tranzition-color {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin tel {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desk {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin media($size) {
+  @media screen and (min-width: $size) {
+    @content;
+  }
+}
