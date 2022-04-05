@@ -270,7 +270,8 @@ body {
   margin-bottom: 32px;
 }
 
-.mob-menu-btn:hover {
+.mob-menu-btn:hover,
+.mob-menu-btn:focus {
   color: #ffffff;
   background-color: #d41443;
 }
@@ -281,7 +282,7 @@ body {
   margin-left: 20px;
   fill: #E17992;
 }
-.mob-menu-btn:hover .header-btn-vector {
+.mob-menu-btn:hover .header-btn-vector, .mob-menu-btn:focus .header-btn-vector {
   fill: #ffffff;
 }
 
@@ -297,7 +298,8 @@ body {
   text-decoration: none;
 }
 
-.mob-menu__link:hover {
+.mob-menu__link:hover,
+.mob-menu__link:focus {
   color: #D41443;
 }
 
